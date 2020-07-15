@@ -5,13 +5,6 @@
     <title>Details</title>
   </head>
   <body>
-    {% if lookup_question %}
-    <ul>
-          <li><a href="/polls/{{ question.id }}/">{{ lookup_question.question_id }}</a></li>
-    </ul>
-    {% else %}
-    <p>No polls are available.</p>
-    {% endif %}
-
+          <p><a href="/polls/{{ question }}/">You are looking at question n. {{ question.id }}</a></p>
   </body>
 </html>
