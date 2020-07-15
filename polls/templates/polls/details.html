@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Details</title>
+  </head>
+  <body>
+    {% if lookup_question %}
+    <ul>
+          <li><a href="/polls/{{ question.id }}/">{{ lookup_question.question_id }}</a></li>
+    </ul>
+    {% else %}
+    <p>No polls are available.</p>
+    {% endif %}
+
+  </body>
+</html>
